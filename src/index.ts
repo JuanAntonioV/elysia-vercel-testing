@@ -1,7 +1,12 @@
 import { Elysia } from 'elysia';
-import homeRoute from './routes/homeRoute';
 
-const app = new Elysia().use(homeRoute).listen(3000);
+const app = new Elysia()
+  .get('/', () => {
+    return {
+      message: 'Hello, Elysia!',
+    };
+  })
+  .listen(3000);
 
 export default app;
 
