@@ -1,8 +1,6 @@
 import Elysia from 'elysia';
 
-const homeRoute = new Elysia();
-
-homeRoute.get('/', () => {
+const homeRoute = new Elysia().get('/', () => {
   return {
     message: 'Hello, Elysia!',
   };
