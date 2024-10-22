@@ -1,19 +1,15 @@
 import { Elysia } from 'elysia';
 
-const app = new Elysia()
-  .get('/', () => {
-    return {
-      message: 'Hello, Elysia!',
-    };
-  })
-  .listen(3000);
+const app = new Elysia().get('/', () => {
+  return {
+    message: 'Hello, Elysia!',
+  };
+});
 
-export const GET = app.handle;
-export const POST = app.handle;
-export const PATCH = app.handle;
-export const PUT = app.handle;
-export const OPTIONS = app.handle;
+export default app;
 
-console.log(
-  `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`
-);
+app.listen(3000);
+
+// console.log(
+//   `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`
+// );
