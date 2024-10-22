@@ -4,8 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun --watch src/index.ts",
-    "build:vercel": "bun run build && bun scripts/transform-paths.ts",
-    "start": "bun run build && bun src/index.ts"
+    "build:vercel": "bun scripts/transform-paths.ts",
+    "start": "bun src/index.ts"
   },
   "dependencies": {
     "elysia": "latest",
