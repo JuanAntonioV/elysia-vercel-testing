@@ -11,6 +11,7 @@
     "elysia": "latest"
   },
   "devDependencies": {
+    "bun": "^1.1.32",
     "bun-types": "latest",
     "vercel": "^37.12.0"
   },
