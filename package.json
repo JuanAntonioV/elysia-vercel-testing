@@ -15,5 +15,5 @@
     "bun-types": "latest",
     "vercel": "^37.12.0"
   },
-  "module": "src/index.js"
+  "module": "src/index.ts"
 }
